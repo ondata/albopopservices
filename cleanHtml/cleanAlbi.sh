@@ -19,7 +19,7 @@ while IFS=$'\t' read -r cf categoria urlToClean tidy scrape xpath; do
 done <"$folder"/config.tsv
 
 
-source $HOME/.keychain/${ex-machina}-sh
+. ~/.keychain/$HOSTNAME-sh
 
 cd "$folder"/..
 git -C "$folder"/.. add .
