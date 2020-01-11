@@ -1,0 +1,10 @@
+[
+  {
+    "cf": "00106170590",
+    "categoria": "Comuni e loro Consorzi e Associazioni",
+    "urlToClean": "https://albopretorio.datamanagementitalia.it/AlboPretorioWeb/?ente=ComuneDiCori&tipoSubmit=ricerca",
+    "tidy": 1,
+    "scrape": 1,
+    "xpath": "//tr[position() > 2]"
+  }
+]
