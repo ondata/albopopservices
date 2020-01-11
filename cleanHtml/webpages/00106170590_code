@@ -1,9 +1,9 @@
 HTTP/1.1 200 
 Connection: Keep-Alive
 Transfer-Encoding: chunked
-Date: Sat, 11 Jan 2020 16:36:11 GMT
+Date: Sat, 11 Jan 2020 16:37:02 GMT
 Content-Type: text/html;charset=ISO-8859-1
-Set-Cookie: JSESSIONID=B21039490E28E9F3BC6F1B5A9EBEE040; Path=/AlboPretorioWeb; HttpOnly
+Set-Cookie: JSESSIONID=41BD8D1A61DEF1143583ED5999F21FA2; Path=/AlboPretorioWeb; HttpOnly
 Content-Encoding: gzip
 Vary: Accept-Encoding
 
