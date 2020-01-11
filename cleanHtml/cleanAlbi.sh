@@ -18,4 +18,7 @@ while IFS=$'\t' read -r cf categoria urlToClean tidy scrape xpath; do
   fi
 done <"$folder"/config.tsv
 
-git add . && git commit -am "update" && git push
+cd "$folder"/..
+git -C "$folder"/.. add .
+git -C "$folder"/.. commit -am "update"
+git -C "$folder"/.. push origin master
