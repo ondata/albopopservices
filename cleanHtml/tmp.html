@@ -1,7 +1,213 @@
-<!DOCTYPE html>
-<html>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+<meta name="generator" content=
+"HTML Tidy for HTML5 for Linux version 5.6.0" />
+<meta http-equiv="content-type" content=
+"text/html; charset=utf-8" />
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<title>Albo Pretorio</title>
+<meta name="generator" content=
+"Amaya, see http://www.w3.org/Amaya/" />
+<link href="css/frontoffice.css" rel="stylesheet" type=
+"text/css" />
+<link href="css/popup.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="script/prototype.js"></script>
+<script type="text/javascript" src=
+"script/scriptaculous.js"></script>
+<script type="text/javascript" src="script/effects.js"></script>
+<script type="text/javascript" src="script/popup.js"></script>
+<script type="text/javascript" src="script/anteo.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function recuperaDettagli(id_atto, contatore){
+window.location.hash='top';
+chiamataAllegati(id_atto, returnObjById('dettagli_atto' + contatore));
+}
+function aggiornaTipiAttoUO(){
+returnObjById('tipoSubmit').value="cambioEnte";
+returnObjById('ricerca').submit();
+}
+function avviaRicerca(){
+returnObjById('tipoSubmit').value="ricerca";
+}
+//]]>
+</script>
+</head>
 <body>
-<table border="1" class="resulttable" cellpadding="3" cellspacing="0">
+<div><a name="top" accesskey="U" id="top"></a></div>
+<table class="headertable" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="http://www.comune.cori.rm.it"><img src=
+"images/header.jpg" alt="Albo Pretorio Comune di Cori" /></a></td>
+</tr>
+</table>
+<form method="post" action="" id="ricerca">
+<p><input type="hidden" id="tipoSubmit" name="tipoSubmit" /></p>
+<fieldset>
+<div class="table"><label class="column1" title="Ente" style=
+"display:none" for="enti">Ente</label> <label class=
+"column2">&nbsp;</label> <select class="comboEnti" id="enti" name=
+"enti" style="display:none">
+<option value="Bazzano">Bazzano</option>
+<option value="Castello di Serravalle">Castello di
+Serravalle</option>
+<option value="comunediamelia">Comune di Amelia</option>
+<option value="ComuneDiAulla">Comune di Aulla</option>
+<option value="ComuneDiAvetrana">Comune di Avetrana</option>
+<option value="comunedicapurso">Comune di Capurso</option>
+<option value="ComuneDiCasaleone">Comune di Casaleone</option>
+<option value="Casarano">Comune di Casarano</option>
+<option value="ComuneDiCori" selected="selected">Comune di
+Cori</option>
+<option value="ComuneDiDalmine">Comune di Dalmine</option>
+<option value="ComuneDiEboli">Comune di Eboli</option>
+<option value="ComuneDiGaggioMontano">Comune di Gaggio
+Montano</option>
+<option value="ALBgdcbyjKvqrtFikD10">Comune di Gagliano del
+Capo</option>
+<option value="ComuneDiGarlasco">Comune di Garlasco</option>
+<option value="AlbLabicoRMYWruXeUJ">Comune di Labico</option>
+<option value="comune_di_maslianico">Comune di Maslianico</option>
+<option value="ComuneDiMesola">Comune di Mesola</option>
+<option value="ComuneDiMorciano">Comune di Morciano di
+Leuca</option>
+<option value="ALBmrlTuz5reWruXe32">Comune di Muro Leccese</option>
+<option value="comunepalestrina">Comune di Palestrina</option>
+<option value="ComuneDiPieveANievole">Comune di Pieve a
+Nievole</option>
+<option value="ComuneDiPonteBuggianese">Comune di Ponte
+Buggianese</option>
+<option value="ComuneDiPulsano">Comune di Pulsano</option>
+<option value="ALBQuarto5reWruXeCB">Comune di Quarto</option>
+<option value="comunediracale">Comune di Racale</option>
+<option value="comuneroccadaspide">Comune di Roccadaspide</option>
+<option value="ComunediRussi">Comune di Russi</option>
+<option value="ComuneDiSanVito">Comune di San Vito dei
+Normanni</option>
+<option value="AlbSVenerina0WruXeLE">Comune di Santa
+Venerina</option>
+<option value="SantAgataLiBattiati">Comune di Sant'Agata Li
+Battiati</option>
+<option value="ALBsepTuz5reWruXeCB">Comune di Sepino</option>
+<option value="ComuneDiTaviano">Comune di Taviano</option>
+<option value="ComuneDiTivoli">Comune di Tivoli</option>
+<option value="comunedivalenzano">Comune di Valenzano</option>
+<option value="Valsamoggia">Comune di Valsamoggia</option>
+<option value="ComunediZanica">Comune di Zanica</option>
+<option value="AlbCoMoMaAhGeoXeLE">Comunit�Montana Matese</option>
+<option value="Crespellano">Crespellano</option>
+<option value="ALBfasTuz9reWruXe64">Datamanagement</option>
+<option value="Montesanpietro">Montesanpietro</option>
+<option value="Monteveglio">Monteveglio</option>
+<option value="Savigno">Savigno</option>
+<option value="UnioneValsamoggia">Unione dei comuni della Valle del
+Samoggia</option>
+</select><br />
+<label class="column1" title="Unità organizzativa" for="uo">Unità
+organizzativa</label> <label class="column2">&nbsp;</label>
+<select class="combo" id="uo" name="uo">
+<option value="02a123d1-5891-48bd-862f-a6466ce32dcb">AREA
+FINANZIARIA</option>
+<option value="130d7d56-a283-4aaa-a7a0-1cf8ef809794">AREA SERVIZI
+AL CITTADINO E DECENTRAMENTO</option>
+<option value="09218243-4109-412f-88f9-e9d59e5f2a6d">AREA SERVIZI
+URBANISTICA ED EDILIZIA PRIVATA</option>
+<option value="ec98315d-8177-47f6-b2b5-41138d10e35c">AREA STAFF E
+AFFARI GENERALI</option>
+<option value="2f730b5a-6d73-444c-b220-7e8a50fb4b36">AREA
+TECNICA</option>
+<option value="f1d19297-f4f3-421c-9978-1e7141590de9">ENTE</option>
+<option value="d78cf41b-a969-46ca-b402-b5af987e2e73">POLIZIA
+LOCALE</option>
+<option value="908c826b-044b-4725-bc23-c0bd9bfd0038">SEGRETERIA
+GENERALE</option>
+</select> <label class="column4" title="Tipo di atto" for=
+"tipoatto">Tipo di atto</label>&nbsp;<select class="combo" id=
+"tipoatto" name="tipoatto">
+<option value="46ed836b-e9bc-49d6-96a9-b3447a6017b4">Atti
+Esterni</option>
+<option value="654d098b-f86a-4430-8db9-46f63e5e11d4">
+Avvisi</option>
+<option value="24726121-643f-4206-a97a-35b9f602a4c3">
+avvisi</option>
+<option value="21d62c5f-2631-4bf4-9a1b-a7dfab5edce1">Bandi e
+Gare</option>
+<option value="f37b1db2-9096-45e2-a647-db78c93ed934">
+Concorsi</option>
+<option value="d0940947-59c4-45a2-b1b6-4845c3fd4287">
+Decreti</option>
+<option value="4323f9a1-0b56-40c7-a044-84991efd215b">
+Delibere</option>
+<option value="3a269dea-6a26-4504-b6a2-14907039390b">
+Determinazioni</option>
+<option value="4e57f151-51fc-4b76-aab1-f191ed39b6b7">
+Ordinanze</option>
+<option value="3c992628-0c1a-481a-adee-63fc84358e25">Pubblicazioni
+Matrimonio</option>
+<option value="6f23d74d-6337-4e1b-8e5c-8178e233ab35">
+Regolamenti</option>
+<option value="95deba32-3e2e-44cb-879d-48c7ad2956de">Usi
+Civici</option>
+</select><br />
+<label class="column1" title="Anno" for="anno">A<span class=
+"underline">n</span>no</label> <label class=
+"column2">&nbsp;</label><input type="text" class="text" id="anno"
+name="anno" accesskey="N" value="" /><br />
+<label class="column1" title="Numero"><span class=
+"underline">N</span>umero</label> <label class="column2" title=
+"dal" for="numda">dal</label><input type="text" class="text" name=
+"numda" id="numda" accesskey="N" value="" /> <label class=
+"column3">&nbsp;</label> <label class="column4" title="al" for=
+"numa"><span class="underline">a</span>l</label>&nbsp;<input type=
+"text" class="text" id="numa" name="numa" accesskey="A" value=
+"" /><br />
+<label class="column1" title="Anno atto" for=
+"annoatto">A<span class="underline">n</span>no atto</label>
+<label class="column2">&nbsp;</label><input type="text" class=
+"text" id="annoatto" name="annoatto" accesskey="N" value="" />
+<label class="column3">&nbsp;</label> <label class="column4" title=
+"Numero atto" for="numatto"><span class="underline">N</span>umero
+atto</label>&nbsp;<input type="text" class="text" name="numatto"
+id="numatto" accesskey="N" value="" /><br />
+<label class="column1" title="Data di adozione"><span class=
+"underline">D</span>ata di adozione</label> <label class="column2"
+title="dal" for="datada">dal</label><input type="text" class="text"
+maxlength="10" id="datada" name="datada" accesskey="D" value="" />
+<label class="column3">&nbsp;</label> <label class="column4" for=
+"dataa"><span class="underline">a</span>l</label>&nbsp;<input type=
+"text" class="text" maxlength="10" id="dataa" name="dataa"
+accesskey="A" value="" /><br />
+<label class="column1"><span class=
+"underline">P</span>ubblicato</label> <label class="column2" for=
+"pubblicatoda">dal</label><input type="text" class="text"
+maxlength="10" id="pubblicatoda" name="pubblicatoda" accesskey="P"
+value="" /> <label class="column3">&nbsp;</label> <label class=
+"column4" for="pubblicatoa"><span class=
+"underline">a</span>l</label>&nbsp;<input type="text" class="text"
+maxlength="10" id="pubblicatoa" name="pubblicatoa" accesskey="A"
+value="" /><br />
+<label class="column1" for="presenteal">Presente <span class=
+"underline">i</span>n data</label> <label class=
+"column2">&nbsp;</label><input type="text" class="text" maxlength=
+"10" id="presenteal" name="presenteal" accesskey="I" value=
+"11/01/2020" /><br />
+<label class="column1" for="chiave">Ricerca per <span class=
+"underline">p</span>arola</label> <label class=
+"column2">&nbsp;</label><input type="text" class="largetext" id=
+"chiave" name="chiave" accesskey="P" value="" /><br />
+<label class="column1" for="provenienza">Ricerca per ente
+pro<span class="underline">v</span>enienza</label> <label class=
+"column2">&nbsp;</label><input type="text" class="largetext" id=
+"provenienza" name="provenienza" accesskey="V" value="" /></div>
+</fieldset>
+<p><input type="submit" value="Avvia la ricerca" onclick=
+"avviaRicerca()" /></p>
+<p>&nbsp;</p>
+<table border="1" class="resulttable" cellpadding="3" cellspacing=
+"0">
 <tr>
 <th colspan="2">Registro Pubblicazioni</th>
 <th colspan="4" style="text-align:center;">Atto</th>
@@ -33,17 +239,19 @@
 <td style="width:100%">Ordinanza n 5 PL</td>
 <td style="text-align:center;">10/01/2020</td>
 <td style="text-align:center;">25/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli0" class="link0" href="javascript:recuperaDettagli('e9fc673e-9a27-4951-921c-a2bab5140c4e',%200);" name="dettagli0">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli0" class="link0"
+href="javascript:recuperaDettagli('e9fc673e-9a27-4951-921c-a2bab5140c4e',%200);"
+name="dettagli0">Visualizza atto</a>
 <div id="div_dettagli0" class="popup">
 <div id="dettagli_atto0"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli0','dettagli0',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -58,17 +266,19 @@
 Concetta</td>
 <td style="text-align:center;">10/01/2020</td>
 <td style="text-align:center;">25/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli1" class="link1" href="javascript:recuperaDettagli('ccbd6de6-bb24-46f4-896b-656809341aed',%201);" name="dettagli1">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli1" class="link1"
+href="javascript:recuperaDettagli('ccbd6de6-bb24-46f4-896b-656809341aed',%201);"
+name="dettagli1">Visualizza atto</a>
 <div id="div_dettagli1" class="popup">
 <div id="dettagli_atto1"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli1','dettagli1',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -82,17 +292,19 @@ Concetta</td>
 <td style="width:100%">Art 143 deposito del 10-01-2020</td>
 <td style="text-align:center;">10/01/2020</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Prefettura di Latina&#160;</td>
+<td style="text-align:center;">Prefettura di Latina&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli2" class="link0" href="javascript:recuperaDettagli('b34ace9f-1fcc-4c54-86dd-e243afca2f8c',%202);" name="dettagli2">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli2" class="link0"
+href="javascript:recuperaDettagli('b34ace9f-1fcc-4c54-86dd-e243afca2f8c',%202);"
+name="dettagli2">Visualizza atto</a>
 <div id="div_dettagli2" class="popup">
 <div id="dettagli_atto2"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli2','dettagli2',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -105,22 +317,24 @@ Concetta</td>
 <td style="text-align:center;">AREA TECNICA</td>
 <td style="width:100%">Proroga Ripristino e recupero ambientale
 cava di pozzolana, di cui alla Legge Regionale Regione Lazio nr 17
-del 6 dicembre 2004 ai sensi dell Art 12 Comma 6 e ssmmii attivit&#224;
+del 6 dicembre 2004 ai sensi dell Art 12 Comma 6 e ssmmii attività
 estrattiva in Colle del Poce Agro di Cori Ditta MDF SCAVI SRL con
 sede in Via Portosello 109 Sabaudia P Iva 02200750590</td>
 <td style="text-align:center;">09/01/2020</td>
 <td style="text-align:center;">24/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli3" class="link1" href="javascript:recuperaDettagli('018cbe44-158b-4512-9828-9d733102cb76',%203);" name="dettagli3">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli3" class="link1"
+href="javascript:recuperaDettagli('018cbe44-158b-4512-9828-9d733102cb76',%203);"
+name="dettagli3">Visualizza atto</a>
 <div id="div_dettagli3" class="popup">
 <div id="dettagli_atto3"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli3','dettagli3',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -137,17 +351,19 @@ la manifestazione d interesse per l'affidamento della gestione in
 concessione del teatro</td>
 <td style="text-align:center;">09/01/2020</td>
 <td style="text-align:center;">24/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli4" class="link0" href="javascript:recuperaDettagli('f75e16f5-b8e7-457e-ace1-63e59bef57dd',%204);" name="dettagli4">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli4" class="link0"
+href="javascript:recuperaDettagli('f75e16f5-b8e7-457e-ace1-63e59bef57dd',%204);"
+name="dettagli4">Visualizza atto</a>
 <div id="div_dettagli4" class="popup">
 <div id="dettagli_atto4"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli4','dettagli4',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -162,17 +378,19 @@ concessione del teatro</td>
 cimitero Cori)</td>
 <td style="text-align:center;">09/01/2020</td>
 <td style="text-align:center;">24/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli5" class="link1" href="javascript:recuperaDettagli('bde81a75-0f14-4014-bc14-a2fc168b8404',%205);" name="dettagli5">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli5" class="link1"
+href="javascript:recuperaDettagli('bde81a75-0f14-4014-bc14-a2fc168b8404',%205);"
+name="dettagli5">Visualizza atto</a>
 <div id="div_dettagli5" class="popup">
 <div id="dettagli_atto5"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli5','dettagli5',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -188,24 +406,26 @@ concesso e atti consequenziali PSR Lazio 2014/2020 Misura 04
 Investimenti in immobilizzazioni materiali Sottomisura 4.3 Sostegno
 a investimenti nell infrastruttura necessaria all ammodernamento e
 all adeguamento dell agricoltura e della silvicoltura tipologia di
-operazione 4.3.1 Miglioramento e ripristino viabilit&#65533; rurale e
+operazione 4.3.1 Miglioramento e ripristino viabilit� rurale e
 forestale extra aziendale, punti di abbeveraggio Intervento 4.3.1.1
-Sistemazione e ristrutturazione della viabilit&#65533; rurale inerente
+Sistemazione e ristrutturazione della viabilit� rurale inerente
 strade vicinali extra aziendali Bando pubblico Domanda di aiuto n.
 54250566277 CAUU00106170590</td>
 <td style="text-align:center;">08/01/2020</td>
 <td style="text-align:center;">23/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli6" class="link0" href="javascript:recuperaDettagli('6b59f049-2bec-4f3c-80d9-0701de1790fb',%206);" name="dettagli6">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli6" class="link0"
+href="javascript:recuperaDettagli('6b59f049-2bec-4f3c-80d9-0701de1790fb',%206);"
+name="dettagli6">Visualizza atto</a>
 <div id="div_dettagli6" class="popup">
 <div id="dettagli_atto6"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli6','dettagli6',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -220,17 +440,19 @@ strade vicinali extra aziendali Bando pubblico Domanda di aiuto n.
 8/01/2020</td>
 <td style="text-align:center;">08/01/2020</td>
 <td style="text-align:center;">23/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli7" class="link1" href="javascript:recuperaDettagli('7a854a2f-efdd-4fc3-b3ef-5aba5943c714',%207);" name="dettagli7">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli7" class="link1"
+href="javascript:recuperaDettagli('7a854a2f-efdd-4fc3-b3ef-5aba5943c714',%207);"
+name="dettagli7">Visualizza atto</a>
 <div id="div_dettagli7" class="popup">
 <div id="dettagli_atto7"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli7','dettagli7',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -246,17 +468,19 @@ DECENTRAMENTO</td>
 OTANIYOUWA</td>
 <td style="text-align:center;">08/01/2020</td>
 <td style="text-align:center;">16/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli8" class="link0" href="javascript:recuperaDettagli('d75f2da7-e72d-4cc5-b57f-4f7eb9f7dd6d',%208);" name="dettagli8">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli8" class="link0"
+href="javascript:recuperaDettagli('d75f2da7-e72d-4cc5-b57f-4f7eb9f7dd6d',%208);"
+name="dettagli8">Visualizza atto</a>
 <div id="div_dettagli8" class="popup">
 <div id="dettagli_atto8"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli8','dettagli8',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -270,17 +494,19 @@ OTANIYOUWA</td>
 <td style="width:100%">Ordinanza n 4 PL</td>
 <td style="text-align:center;">08/01/2020</td>
 <td style="text-align:center;">23/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli9" class="link1" href="javascript:recuperaDettagli('eccef9ad-4743-440b-918f-ceb17e1fe54c',%209);" name="dettagli9">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli9" class="link1"
+href="javascript:recuperaDettagli('eccef9ad-4743-440b-918f-ceb17e1fe54c',%209);"
+name="dettagli9">Visualizza atto</a>
 <div id="div_dettagli9" class="popup">
 <div id="dettagli_atto9"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli9','dettagli9',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -295,17 +521,20 @@ OTANIYOUWA</td>
 d.lgs 167-2000 comma 5 quater</td>
 <td style="text-align:center;">08/01/2020</td>
 <td style="text-align:center;">23/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli10" class="link0" href="javascript:recuperaDettagli('8bda70ce-af91-4ec2-85b3-3b4b08820595',%2010);" name="dettagli10">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli10" class="link0"
+href=
+"javascript:recuperaDettagli('8bda70ce-af91-4ec2-85b3-3b4b08820595',%2010);"
+name="dettagli10">Visualizza atto</a>
 <div id="div_dettagli10" class="popup">
 <div id="dettagli_atto10"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli10','dettagli10',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -321,16 +550,16 @@ concesso e atti consequenziali PSR Lazio 2014/2020 Misura 04
 Investimenti in immobilizzazioni materiali Sottomisura 4.3 Sostegno
 a investimenti nell infrastruttura necessaria all ammodernamento e
 all adeguamento dell agricoltura e della silvicoltura tipologia di
-operazione 4.3.1 Miglioramento e ripristino viabilit&#224; rurale e
+operazione 4.3.1 Miglioramento e ripristino viabilità rurale e
 forestale extra aziendale, punti di abbeveraggio Intervento 4.3.1.1
-Sistemazione e ristrutturazione della viabilit&#224; rurale inerente
+Sistemazione e ristrutturazione della viabilità rurale inerente
 strade vicinali extra aziendali Bando pubblico Domanda di aiuto n.
 54250566277 CAUU00106170590</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">ANNULLATO</td>
-<td style="text-align:center;">&#160;</td>
+<td style="text-align:center;">&nbsp;</td>
 </tr>
 <tr class="td0">
 <td>15</td>
@@ -345,17 +574,20 @@ consorzio Fossatello Pezze di Ninfa - Prot n 179 del 7/01/2020</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
 <td style="text-align:center;">Consorzio Fossatello Pezze di
-Ninfa&#160;</td>
+Ninfa&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli12" class="link0" href="javascript:recuperaDettagli('87b7335a-a6ec-4aea-b7e9-c224f3ca8f82',%2012);" name="dettagli12">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli12" class="link0"
+href=
+"javascript:recuperaDettagli('87b7335a-a6ec-4aea-b7e9-c224f3ca8f82',%2012);"
+name="dettagli12">Visualizza atto</a>
 <div id="div_dettagli12" class="popup">
 <div id="dettagli_atto12"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli12','dettagli12',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -371,17 +603,20 @@ consorzio Fossatello Pezze di Ninfa - Prot n 178 del 7/01/2020</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
 <td style="text-align:center;">Consorzio Fossatello Pezze di
-Ninfa&#160;</td>
+Ninfa&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli13" class="link1" href="javascript:recuperaDettagli('b52ceee5-a3db-4ddc-8b1c-f09a7d8c3e30',%2013);" name="dettagli13">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli13" class="link1"
+href=
+"javascript:recuperaDettagli('b52ceee5-a3db-4ddc-8b1c-f09a7d8c3e30',%2013);"
+name="dettagli13">Visualizza atto</a>
 <div id="div_dettagli13" class="popup">
 <div id="dettagli_atto13"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli13','dettagli13',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -396,17 +631,20 @@ Ninfa&#160;</td>
 7/01/2020</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli14" class="link0" href="javascript:recuperaDettagli('7e71ad16-edfe-4983-a991-e9a56dc67595',%2014);" name="dettagli14">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli14" class="link0"
+href=
+"javascript:recuperaDettagli('7e71ad16-edfe-4983-a991-e9a56dc67595',%2014);"
+name="dettagli14">Visualizza atto</a>
 <div id="div_dettagli14" class="popup">
 <div id="dettagli_atto14"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli14','dettagli14',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -422,17 +660,20 @@ sindacale per la contrattazione decentrata triennio 2019-2021 e
 Ripartizione Fondo 2019 parte economica.</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli15" class="link1" href="javascript:recuperaDettagli('562c0154-d7c3-41e2-86f3-ab5d9dce4ac0',%2015);" name="dettagli15">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli15" class="link1"
+href=
+"javascript:recuperaDettagli('562c0154-d7c3-41e2-86f3-ab5d9dce4ac0',%2015);"
+name="dettagli15">Visualizza atto</a>
 <div id="div_dettagli15" class="popup">
 <div id="dettagli_atto15"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli15','dettagli15',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -449,21 +690,24 @@ Interventi di riparazione e miglioramento sismico dell edificio in
 zona Sipportiche in Cori (LT). CUP: J63G18000060001 - CIG:
 8085045632 (LAVORI). INDIZIONE DI SELEZIONE PUBBLICA PER LA NOMINA
 DEI COMMISSARI DI GARA. Impegno di spesa. CIG. Z9B2B3F001 Proroga
-per la consegna della disponibilit&#224; per la formazione della
+per la consegna della disponibilità per la formazione della
 Commissione di gara</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli16" class="link0" href="javascript:recuperaDettagli('c0a64a57-256d-4b9b-bbd0-3a90a670bc14',%2016);" name="dettagli16">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli16" class="link0"
+href=
+"javascript:recuperaDettagli('c0a64a57-256d-4b9b-bbd0-3a90a670bc14',%2016);"
+name="dettagli16">Visualizza atto</a>
 <div id="div_dettagli16" class="popup">
 <div id="dettagli_atto16"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli16','dettagli16',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -476,21 +720,24 @@ Commissione di gara</td>
 <td style="text-align:center;">AREA SERVIZI AL CITTADINO E
 DECENTRAMENTO</td>
 <td style="width:100%">Costituzione team di progettazione
-iniziative per il 300&#176; anniversario nascita Giambattista
+iniziative per il 300° anniversario nascita Giambattista
 Piranesi</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli17" class="link1" href="javascript:recuperaDettagli('b739718e-a598-491f-93f5-c5a858b859a2',%2017);" name="dettagli17">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli17" class="link1"
+href=
+"javascript:recuperaDettagli('b739718e-a598-491f-93f5-c5a858b859a2',%2017);"
+name="dettagli17">Visualizza atto</a>
 <div id="div_dettagli17" class="popup">
 <div id="dettagli_atto17"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli17','dettagli17',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -506,17 +753,20 @@ Italiana Comitato di Latina per giornata denominata Misuriamoci -
 Cori 12 gennaio 2020.</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli18" class="link0" href="javascript:recuperaDettagli('727803ff-6794-4fdf-bc8d-26ede44a266d',%2018);" name="dettagli18">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli18" class="link0"
+href=
+"javascript:recuperaDettagli('727803ff-6794-4fdf-bc8d-26ede44a266d',%2018);"
+name="dettagli18">Visualizza atto</a>
 <div id="div_dettagli18" class="popup">
 <div id="dettagli_atto18"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli18','dettagli18',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -530,17 +780,20 @@ Cori 12 gennaio 2020.</td>
 <td style="width:100%">Ordinanza n 3 PL</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli19" class="link1" href="javascript:recuperaDettagli('2112a29c-8baf-4027-89cd-e90ea79f9e14',%2019);" name="dettagli19">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli19" class="link1"
+href=
+"javascript:recuperaDettagli('2112a29c-8baf-4027-89cd-e90ea79f9e14',%2019);"
+name="dettagli19">Visualizza atto</a>
 <div id="div_dettagli19" class="popup">
 <div id="dettagli_atto19"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli19','dettagli19',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -555,17 +808,20 @@ DECENTRAMENTO</td>
 <td style="width:100%">Provvedimenti anagrafici del 3/01/2020</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">06/02/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli20" class="link0" href="javascript:recuperaDettagli('53e12d93-a89e-4d47-b250-1fee36e442e1',%2020);" name="dettagli20">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli20" class="link0"
+href=
+"javascript:recuperaDettagli('53e12d93-a89e-4d47-b250-1fee36e442e1',%2020);"
+name="dettagli20">Visualizza atto</a>
 <div id="div_dettagli20" class="popup">
 <div id="dettagli_atto20"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli20','dettagli20',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -579,17 +835,20 @@ DECENTRAMENTO</td>
 <td style="width:100%">Ordinanza n 2 PL</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli21" class="link1" href="javascript:recuperaDettagli('6958d7de-59b0-4d7b-8082-b8b3e3e7a74e',%2021);" name="dettagli21">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli21" class="link1"
+href=
+"javascript:recuperaDettagli('6958d7de-59b0-4d7b-8082-b8b3e3e7a74e',%2021);"
+name="dettagli21">Visualizza atto</a>
 <div id="div_dettagli21" class="popup">
 <div id="dettagli_atto21"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli21','dettagli21',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -603,17 +862,20 @@ DECENTRAMENTO</td>
 <td style="width:100%">Ordinanza n 1 PL</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli22" class="link0" href="javascript:recuperaDettagli('8fe4b0e6-84be-44f0-9ec7-4868d424f178',%2022);" name="dettagli22">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli22" class="link0"
+href=
+"javascript:recuperaDettagli('8fe4b0e6-84be-44f0-9ec7-4868d424f178',%2022);"
+name="dettagli22">Visualizza atto</a>
 <div id="div_dettagli22" class="popup">
 <div id="dettagli_atto22"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli22','dettagli22',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -627,20 +889,23 @@ DECENTRAMENTO</td>
 DECENTRAMENTO</td>
 <td style="width:100%">L.R.42/97. Piano 2019 beni e servizi
 culturali. Biblioteca- Archivio - Museo. Accertamento d entrata ed
-impegno di spesa- Rimodulazione progettualit&#224;.</td>
+impegno di spesa- Rimodulazione progettualità.</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli23" class="link1" href="javascript:recuperaDettagli('65088164-f42e-4006-aaa0-b31731d98d07',%2023);" name="dettagli23">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli23" class="link1"
+href=
+"javascript:recuperaDettagli('65088164-f42e-4006-aaa0-b31731d98d07',%2023);"
+name="dettagli23">Visualizza atto</a>
 <div id="div_dettagli23" class="popup">
 <div id="dettagli_atto23"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli23','dettagli23',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -654,21 +919,24 @@ impegno di spesa- Rimodulazione progettualit&#224;.</td>
 DECENTRAMENTO</td>
 <td style="width:100%">Accertamento d entrata e impegno di spesa
 quota parte introiti da parte Fondazione Caetani a seguito dell
-evento del 6 ottobre 2019 legato al pacchetto di visite alla Citt&#224;
+evento del 6 ottobre 2019 legato al pacchetto di visite alla Città
 di Cori in combinazione con il Giardino di Ninfa.</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli24" class="link0" href="javascript:recuperaDettagli('5bfd8eee-f2a0-473e-a14a-4bd4bb2eaaa1',%2024);" name="dettagli24">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli24" class="link0"
+href=
+"javascript:recuperaDettagli('5bfd8eee-f2a0-473e-a14a-4bd4bb2eaaa1',%2024);"
+name="dettagli24">Visualizza atto</a>
 <div id="div_dettagli24" class="popup">
 <div id="dettagli_atto24"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli24','dettagli24',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -689,17 +957,20 @@ MODULISTICA PER L'APPALTO DEL SERVIZIO DI TESORERIA NEL COMUNE DI
 CORI. CIG: 81615189B5</td>
 <td style="text-align:center;">07/01/2020</td>
 <td style="text-align:center;">22/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli25" class="link1" href="javascript:recuperaDettagli('e88c69de-2bcb-44d2-b0d8-005a7abd5fe5',%2025);" name="dettagli25">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli25" class="link1"
+href=
+"javascript:recuperaDettagli('e88c69de-2bcb-44d2-b0d8-005a7abd5fe5',%2025);"
+name="dettagli25">Visualizza atto</a>
 <div id="div_dettagli25" class="popup">
 <div id="dettagli_atto25"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli25','dettagli25',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -715,17 +986,20 @@ DECENTRAMENTO</td>
 CERROCCHI</td>
 <td style="text-align:center;">03/01/2020</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli26" class="link0" href="javascript:recuperaDettagli('d371d552-a246-46e9-93cd-87babe1c98e8',%2026);" name="dettagli26">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli26" class="link0"
+href=
+"javascript:recuperaDettagli('d371d552-a246-46e9-93cd-87babe1c98e8',%2026);"
+name="dettagli26">Visualizza atto</a>
 <div id="div_dettagli26" class="popup">
 <div id="dettagli_atto26"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli26','dettagli26',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -741,17 +1015,20 @@ Nappi titolare della convenzione tra i Comuni di Cori (LT) e Norma
 (LT)</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli27" class="link1" href="javascript:recuperaDettagli('1c8a0d21-0ae5-49f0-a3e1-35e1886375d8',%2027);" name="dettagli27">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli27" class="link1"
+href=
+"javascript:recuperaDettagli('1c8a0d21-0ae5-49f0-a3e1-35e1886375d8',%2027);"
+name="dettagli27">Visualizza atto</a>
 <div id="div_dettagli27" class="popup">
 <div id="dettagli_atto27"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli27','dettagli27',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -766,17 +1043,20 @@ Nappi titolare della convenzione tra i Comuni di Cori (LT) e Norma
 31/12/2019</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">29/02/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli28" class="link0" href="javascript:recuperaDettagli('6d40eb15-1fbd-4180-8e18-bc5dbfe62ca3',%2028);" name="dettagli28">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli28" class="link0"
+href=
+"javascript:recuperaDettagli('6d40eb15-1fbd-4180-8e18-bc5dbfe62ca3',%2028);"
+name="dettagli28">Visualizza atto</a>
 <div id="div_dettagli28" class="popup">
 <div id="dettagli_atto28"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli28','dettagli28',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -791,17 +1071,20 @@ Nappi titolare della convenzione tra i Comuni di Cori (LT) e Norma
 31/12/2019</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">29/02/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli29" class="link1" href="javascript:recuperaDettagli('9565b046-4085-42bf-adaa-ba1fec8bb610',%2029);" name="dettagli29">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli29" class="link1"
+href=
+"javascript:recuperaDettagli('9565b046-4085-42bf-adaa-ba1fec8bb610',%2029);"
+name="dettagli29">Visualizza atto</a>
 <div id="div_dettagli29" class="popup">
 <div id="dettagli_atto29"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli29','dettagli29',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -817,21 +1100,24 @@ consultare per l affidamento di lavori mediante per importi
 inferiori alla soglia di cui agli art. 36 e 37 del D.Lgs 50/2016 e
 di professionisti per l affidamento di incarichi di progettazione
 ed altri servizi di importo inferiore ad Euro 100.000,00 Apertura
-termini ed aggiornamento elenchi. Termine di validit&#224; ultimo degli
+termini ed aggiornamento elenchi. Termine di validità ultimo degli
 elenchi fino al 29.02.2020 del Comune di Cori</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli30" class="link0" href="javascript:recuperaDettagli('069c7089-0f73-4914-ac8f-d4377447ecd6',%2030);" name="dettagli30">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli30" class="link0"
+href=
+"javascript:recuperaDettagli('069c7089-0f73-4914-ac8f-d4377447ecd6',%2030);"
+name="dettagli30">Visualizza atto</a>
 <div id="div_dettagli30" class="popup">
 <div id="dettagli_atto30"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli30','dettagli30',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -848,17 +1134,20 @@ dell Infanzia e Scuola Primaria di Giulianello di Cori.CIG
 ZF52B6577C</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli31" class="link1" href="javascript:recuperaDettagli('f543627c-927e-4cf0-a4f1-6afc7349d987',%2031);" name="dettagli31">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli31" class="link1"
+href=
+"javascript:recuperaDettagli('f543627c-927e-4cf0-a4f1-6afc7349d987',%2031);"
+name="dettagli31">Visualizza atto</a>
 <div id="div_dettagli31" class="popup">
 <div id="dettagli_atto31"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli31','dettagli31',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -874,17 +1163,20 @@ DECENTRAMENTO</td>
 27/12/2019</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">30/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli32" class="link0" href="javascript:recuperaDettagli('c661b01e-fd21-47d0-8eb0-da304c4f35bb',%2032);" name="dettagli32">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli32" class="link0"
+href=
+"javascript:recuperaDettagli('c661b01e-fd21-47d0-8eb0-da304c4f35bb',%2032);"
+name="dettagli32">Visualizza atto</a>
 <div id="div_dettagli32" class="popup">
 <div id="dettagli_atto32"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli32','dettagli32',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -899,17 +1191,20 @@ DECENTRAMENTO</td>
 e Territorio Prot 13370 del 20/12/2019</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">29/02/2020</td>
-<td style="text-align:center;">Agenzia delle Entrate&#160;</td>
+<td style="text-align:center;">Agenzia delle Entrate&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli33" class="link1" href="javascript:recuperaDettagli('5cf50b17-a794-491b-b815-01cd4965345b',%2033);" name="dettagli33">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli33" class="link1"
+href=
+"javascript:recuperaDettagli('5cf50b17-a794-491b-b815-01cd4965345b',%2033);"
+name="dettagli33">Visualizza atto</a>
 <div id="div_dettagli33" class="popup">
 <div id="dettagli_atto33"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli33','dettagli33',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -924,17 +1219,20 @@ e Territorio Prot 13370 del 20/12/2019</td>
 Nicola</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli34" class="link0" href="javascript:recuperaDettagli('408ec79f-485f-4f54-9a77-2b05f36fb53e',%2034);" name="dettagli34">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli34" class="link0"
+href=
+"javascript:recuperaDettagli('408ec79f-485f-4f54-9a77-2b05f36fb53e',%2034);"
+name="dettagli34">Visualizza atto</a>
 <div id="div_dettagli34" class="popup">
 <div id="dettagli_atto34"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli34','dettagli34',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -952,17 +1250,20 @@ tramite RD per l anno 2020 alla Rida Ambiente SrL Soc
 Unipersonale</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli35" class="link1" href="javascript:recuperaDettagli('7178787c-7e06-4ec0-8a1a-88f4f27374eb',%2035);" name="dettagli35">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli35" class="link1"
+href=
+"javascript:recuperaDettagli('7178787c-7e06-4ec0-8a1a-88f4f27374eb',%2035);"
+name="dettagli35">Visualizza atto</a>
 <div id="div_dettagli35" class="popup">
 <div id="dettagli_atto35"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli35','dettagli35',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -981,17 +1282,20 @@ Territorio del Comune di Cori tramite RD per l anno 2020 alla Rida
 Ambiente SrL Soc Unipersonale</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli36" class="link0" href="javascript:recuperaDettagli('b1c6a126-852d-4daa-a27b-adbf43598547',%2036);" name="dettagli36">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli36" class="link0"
+href=
+"javascript:recuperaDettagli('b1c6a126-852d-4daa-a27b-adbf43598547',%2036);"
+name="dettagli36">Visualizza atto</a>
 <div id="div_dettagli36" class="popup">
 <div id="dettagli_atto36"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli36','dettagli36',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1006,17 +1310,20 @@ Ambiente SrL Soc Unipersonale</td>
 17122019 Accertamento entrate condono edilizio Presa d atto</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli37" class="link1" href="javascript:recuperaDettagli('43240dea-84c0-42a5-af7f-56c74085fd24',%2037);" name="dettagli37">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli37" class="link1"
+href=
+"javascript:recuperaDettagli('43240dea-84c0-42a5-af7f-56c74085fd24',%2037);"
+name="dettagli37">Visualizza atto</a>
 <div id="div_dettagli37" class="popup">
 <div id="dettagli_atto37"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli37','dettagli37',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1032,17 +1339,20 @@ DECENTRAMENTO</td>
 SPRAR-SIPROIMI</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli38" class="link0" href="javascript:recuperaDettagli('5472bcc0-01a2-43f6-95b3-c828c3cfef0f',%2038);" name="dettagli38">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli38" class="link0"
+href=
+"javascript:recuperaDettagli('5472bcc0-01a2-43f6-95b3-c828c3cfef0f',%2038);"
+name="dettagli38">Visualizza atto</a>
 <div id="div_dettagli38" class="popup">
 <div id="dettagli_atto38"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli38','dettagli38',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1059,17 +1369,20 @@ cementizio per sistemazione tratto di strada secondaria Via F.lli
 Cervi. - CIG: ZB22B632CC</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli39" class="link1" href="javascript:recuperaDettagli('806e210d-b40a-47a9-9587-326ffe82b13e',%2039);" name="dettagli39">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli39" class="link1"
+href=
+"javascript:recuperaDettagli('806e210d-b40a-47a9-9587-326ffe82b13e',%2039);"
+name="dettagli39">Visualizza atto</a>
 <div id="div_dettagli39" class="popup">
 <div id="dettagli_atto39"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli39','dettagli39',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1087,17 +1400,20 @@ bituminoso per la manutenzione delle Strade Comunali di Cori e
 frazione Giulianello di Cori. CIG Z242B60A90</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli40" class="link0" href="javascript:recuperaDettagli('c569c832-4f34-4354-913b-d790266a2841',%2040);" name="dettagli40">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli40" class="link0"
+href=
+"javascript:recuperaDettagli('c569c832-4f34-4354-913b-d790266a2841',%2040);"
+name="dettagli40">Visualizza atto</a>
 <div id="div_dettagli40" class="popup">
 <div id="dettagli_atto40"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli40','dettagli40',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1114,17 +1430,20 @@ di Ninfa Agro di Cori LT ex art 192 comma 3 Dlgs n152 2006 CIG
 Z4C2B57682</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli41" class="link1" href="javascript:recuperaDettagli('822d3223-4ca7-4951-9428-a5f8ab9a589c',%2041);" name="dettagli41">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli41" class="link1"
+href=
+"javascript:recuperaDettagli('822d3223-4ca7-4951-9428-a5f8ab9a589c',%2041);"
+name="dettagli41">Visualizza atto</a>
 <div id="div_dettagli41" class="popup">
 <div id="dettagli_atto41"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli41','dettagli41',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1135,22 +1454,25 @@ Z4C2B57682</td>
 <td style="text-align:center;">2019</td>
 <td style="text-align:center;">30/12/2019</td>
 <td style="text-align:center;">AREA TECNICA</td>
-<td style="width:100%">Lavori di somma urgenza calamit&#224; dicembre
+<td style="width:100%">Lavori di somma urgenza calamità dicembre
 2019 impegno di spesa a favore della Ditta Pietrosanti Sandro. -
 CIG: Z662B5CBF4</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli42" class="link0" href="javascript:recuperaDettagli('c5ba95a6-f60f-493f-889b-70a38abd76ba',%2042);" name="dettagli42">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli42" class="link0"
+href=
+"javascript:recuperaDettagli('c5ba95a6-f60f-493f-889b-70a38abd76ba',%2042);"
+name="dettagli42">Visualizza atto</a>
 <div id="div_dettagli42" class="popup">
 <div id="dettagli_atto42"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli42','dettagli42',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1167,17 +1489,20 @@ manutenzione ordinaria illuminazione scuola elementare di
 Giulianello di Cori CIG: Z742A711E7.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli43" class="link1" href="javascript:recuperaDettagli('572d3b23-d0aa-4e06-aca8-ce86ab9b8443',%2043);" name="dettagli43">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli43" class="link1"
+href=
+"javascript:recuperaDettagli('572d3b23-d0aa-4e06-aca8-ce86ab9b8443',%2043);"
+name="dettagli43">Visualizza atto</a>
 <div id="div_dettagli43" class="popup">
 <div id="dettagli_atto43"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli43','dettagli43',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1193,17 +1518,20 @@ novembre 2019) a favore della ditta Del Prete Waste Recycling SRL,
 Via Codacchio snc 04013 Sermoneta Latina CIG. Z292AB849A</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli44" class="link0" href="javascript:recuperaDettagli('eacc2702-db7b-4f53-af52-10d15cda6d19',%2044);" name="dettagli44">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli44" class="link0"
+href=
+"javascript:recuperaDettagli('eacc2702-db7b-4f53-af52-10d15cda6d19',%2044);"
+name="dettagli44">Visualizza atto</a>
 <div id="div_dettagli44" class="popup">
 <div id="dettagli_atto44"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli44','dettagli44',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1220,17 +1548,20 @@ Via Codacchio snc 04013 Sermoneta Latina CIG. ZE527FA6FB
 Z232A88733</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli45" class="link1" href="javascript:recuperaDettagli('00e1510e-d1b8-44bc-b3ef-5e47c0c85d04',%2045);" name="dettagli45">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli45" class="link1"
+href=
+"javascript:recuperaDettagli('00e1510e-d1b8-44bc-b3ef-5e47c0c85d04',%2045);"
+name="dettagli45">Visualizza atto</a>
 <div id="div_dettagli45" class="popup">
 <div id="dettagli_atto45"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli45','dettagli45',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1247,17 +1578,20 @@ Via Codacchio snc 04013 Sermoneta Latina CIG. Z232A88733
 Z292AB849A</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli46" class="link0" href="javascript:recuperaDettagli('8e57c5b7-3739-4a43-9305-838bfd320dd1',%2046);" name="dettagli46">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli46" class="link0"
+href=
+"javascript:recuperaDettagli('8e57c5b7-3739-4a43-9305-838bfd320dd1',%2046);"
+name="dettagli46">Visualizza atto</a>
 <div id="div_dettagli46" class="popup">
 <div id="dettagli_atto46"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli46','dettagli46',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1273,17 +1607,20 @@ DECENTRAMENTO</td>
 .</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli47" class="link1" href="javascript:recuperaDettagli('a9334410-087a-48dc-8a20-789006722ed2',%2047);" name="dettagli47">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli47" class="link1"
+href=
+"javascript:recuperaDettagli('a9334410-087a-48dc-8a20-789006722ed2',%2047);"
+name="dettagli47">Visualizza atto</a>
 <div id="div_dettagli47" class="popup">
 <div id="dettagli_atto47"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli47','dettagli47',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1297,20 +1634,23 @@ DECENTRAMENTO</td>
 DECENTRAMENTO</td>
 <td style="width:100%">Impegno di spesa in favore dell Ass.
 Culturale Il Buonumore per undicesima edizione della manifestazione
-Frammenti d attualit&#224;- edizione 2019.</td>
+Frammenti d attualità- edizione 2019.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli48" class="link0" href="javascript:recuperaDettagli('b13a0cdd-9181-455e-9ebe-ee0642cfcd76',%2048);" name="dettagli48">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli48" class="link0"
+href=
+"javascript:recuperaDettagli('b13a0cdd-9181-455e-9ebe-ee0642cfcd76',%2048);"
+name="dettagli48">Visualizza atto</a>
 <div id="div_dettagli48" class="popup">
 <div id="dettagli_atto48"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli48','dettagli48',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1323,20 +1663,23 @@ Frammenti d attualit&#224;- edizione 2019.</td>
 <td style="text-align:center;">AREA SERVIZI AL CITTADINO E
 DECENTRAMENTO</td>
 <td style="width:100%">Impegno di spesa a seguito accordo tra
-Comune di Cori e associazioni sbandieratori. Annualit&#224; 2019.</td>
+Comune di Cori e associazioni sbandieratori. Annualità 2019.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli49" class="link1" href="javascript:recuperaDettagli('6c621cfd-35ed-444f-83d1-266eaf81af3a',%2049);" name="dettagli49">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli49" class="link1"
+href=
+"javascript:recuperaDettagli('6c621cfd-35ed-444f-83d1-266eaf81af3a',%2049);"
+name="dettagli49">Visualizza atto</a>
 <div id="div_dettagli49" class="popup">
 <div id="dettagli_atto49"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli49','dettagli49',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1349,21 +1692,24 @@ Comune di Cori e associazioni sbandieratori. Annualit&#224; 2019.</td>
 <td style="text-align:center;">AREA SERVIZI AL CITTADINO E
 DECENTRAMENTO</td>
 <td style="width:100%">Associazione Culturale Il Corvo. Impegno di
-spesa di &#8364; 1.500,00 per 23&#176; rassegna teatrale Buonumore a teatro
-Citt&#224; di Cori 2019- 2020.</td>
+spesa di € 1.500,00 per 23° rassegna teatrale Buonumore a teatro
+Città di Cori 2019- 2020.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli50" class="link0" href="javascript:recuperaDettagli('127e1f34-df28-4633-9c81-6c22b4b3984c',%2050);" name="dettagli50">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli50" class="link0"
+href=
+"javascript:recuperaDettagli('127e1f34-df28-4633-9c81-6c22b4b3984c',%2050);"
+name="dettagli50">Visualizza atto</a>
 <div id="div_dettagli50" class="popup">
 <div id="dettagli_atto50"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli50','dettagli50',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1379,17 +1725,20 @@ ditta Segnaletica Stradale Generale Europea SRL per la fornitura di
 segnaletica orizzontale e verticale - CIG: Z3B2B4FA4F</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli51" class="link1" href="javascript:recuperaDettagli('2eb49f9c-32a0-41c4-85e8-1b65f65a183d',%2051);" name="dettagli51">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli51" class="link1"
+href=
+"javascript:recuperaDettagli('2eb49f9c-32a0-41c4-85e8-1b65f65a183d',%2051);"
+name="dettagli51">Visualizza atto</a>
 <div id="div_dettagli51" class="popup">
 <div id="dettagli_atto51"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli51','dettagli51',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1405,17 +1754,20 @@ segnaletica orizzontale e verticale - CIG: Z3B2B4FA4F</td>
 Z5A26BB47E</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli52" class="link0" href="javascript:recuperaDettagli('c2b2ec21-9c2f-4085-a5d9-db47e0e716e6',%2052);" name="dettagli52">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli52" class="link0"
+href=
+"javascript:recuperaDettagli('c2b2ec21-9c2f-4085-a5d9-db47e0e716e6',%2052);"
+name="dettagli52">Visualizza atto</a>
 <div id="div_dettagli52" class="popup">
 <div id="dettagli_atto52"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli52','dettagli52',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1431,17 +1783,20 @@ Effeemme Srl per fornitura rotoli di carta termica per parcometri
 in dotazione - CIG: ZB82B488EE</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli53" class="link1" href="javascript:recuperaDettagli('e5c47b68-090a-47b3-a428-75e78a9fc3ca',%2053);" name="dettagli53">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli53" class="link1"
+href=
+"javascript:recuperaDettagli('e5c47b68-090a-47b3-a428-75e78a9fc3ca',%2053);"
+name="dettagli53">Visualizza atto</a>
 <div id="div_dettagli53" class="popup">
 <div id="dettagli_atto53"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli53','dettagli53',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1456,17 +1811,20 @@ DECENTRAMENTO</td>
 <td style="width:100%">liquidazione indigente G</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli54" class="link0" href="javascript:recuperaDettagli('eb174f7e-3af8-4eef-aaee-2ace7c765fe2',%2054);" name="dettagli54">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli54" class="link0"
+href=
+"javascript:recuperaDettagli('eb174f7e-3af8-4eef-aaee-2ace7c765fe2',%2054);"
+name="dettagli54">Visualizza atto</a>
 <div id="div_dettagli54" class="popup">
 <div id="dettagli_atto54"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli54','dettagli54',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1479,21 +1837,24 @@ DECENTRAMENTO</td>
 <td style="text-align:center;">AREA SERVIZI AL CITTADINO E
 DECENTRAMENTO</td>
 <td style="width:100%">liquidazione quota parte per la
-realizzazione del progetto Te-lazio per la terza et&#224; al centro
+realizzazione del progetto Te-lazio per la terza età al centro
 anziani "Il Ponte"</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli55" class="link1" href="javascript:recuperaDettagli('c3c6f232-0337-40c7-9d5a-2214d954a5bb',%2055);" name="dettagli55">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli55" class="link1"
+href=
+"javascript:recuperaDettagli('c3c6f232-0337-40c7-9d5a-2214d954a5bb',%2055);"
+name="dettagli55">Visualizza atto</a>
 <div id="div_dettagli55" class="popup">
 <div id="dettagli_atto55"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli55','dettagli55',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1510,17 +1871,20 @@ della Coop. Astrolabio per Servizio Centro Sollievo disabili adulti
 Isola di Nemo novembre 2019</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli56" class="link0" href="javascript:recuperaDettagli('f46b4630-d3b7-4c64-9767-77983d2e9e1b',%2056);" name="dettagli56">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli56" class="link0"
+href=
+"javascript:recuperaDettagli('f46b4630-d3b7-4c64-9767-77983d2e9e1b',%2056);"
+name="dettagli56">Visualizza atto</a>
 <div id="div_dettagli56" class="popup">
 <div id="dettagli_atto56"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli56','dettagli56',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1537,17 +1901,20 @@ della Coop. Astrolabio per Servizio assistenza educativa
 specialistica novembre 2019.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli57" class="link1" href="javascript:recuperaDettagli('ddab975b-eab1-4230-bc2c-8718c754b25b',%2057);" name="dettagli57">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli57" class="link1"
+href=
+"javascript:recuperaDettagli('ddab975b-eab1-4230-bc2c-8718c754b25b',%2057);"
+name="dettagli57">Visualizza atto</a>
 <div id="div_dettagli57" class="popup">
 <div id="dettagli_atto57"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli57','dettagli57',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1564,17 +1931,20 @@ srl Casa degli Angeli Custodi per ricovero utente S.V. dal
 26.11.2019.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli58" class="link0" href="javascript:recuperaDettagli('50c7e801-1aa8-4786-a611-35a3cff5a239',%2058);" name="dettagli58">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli58" class="link0"
+href=
+"javascript:recuperaDettagli('50c7e801-1aa8-4786-a611-35a3cff5a239',%2058);"
+name="dettagli58">Visualizza atto</a>
 <div id="div_dettagli58" class="popup">
 <div id="dettagli_atto58"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli58','dettagli58',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1588,20 +1958,23 @@ srl Casa degli Angeli Custodi per ricovero utente S.V. dal
 DECENTRAMENTO</td>
 <td style="width:100%">Accertamento d entrata e impegno di spesa.
 Art.31 L.R.26/2007 Promozione a fini turistici delle manifestazioni
-tradizionali. Annualit&#224; 2019.</td>
+tradizionali. Annualità 2019.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli59" class="link1" href="javascript:recuperaDettagli('87d689f6-ae25-4308-b569-188d8f7fd32f',%2059);" name="dettagli59">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli59" class="link1"
+href=
+"javascript:recuperaDettagli('87d689f6-ae25-4308-b569-188d8f7fd32f',%2059);"
+name="dettagli59">Visualizza atto</a>
 <div id="div_dettagli59" class="popup">
 <div id="dettagli_atto59"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli59','dettagli59',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1614,21 +1987,24 @@ tradizionali. Annualit&#224; 2019.</td>
 <td style="text-align:center;">AREA SERVIZI AL CITTADINO E
 DECENTRAMENTO</td>
 <td style="width:100%">Liquidazione fattura n. 188/19 del
-28.10.2019 di &#8364; 3.000 EURO.MED SRL per retta minore DFG mese di
+28.10.2019 di € 3.000 EURO.MED SRL per retta minore DFG mese di
 settembre 2019.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli60" class="link0" href="javascript:recuperaDettagli('682a83e8-0c3e-4f37-908b-b2bac968298c',%2060);" name="dettagli60">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli60" class="link0"
+href=
+"javascript:recuperaDettagli('682a83e8-0c3e-4f37-908b-b2bac968298c',%2060);"
+name="dettagli60">Visualizza atto</a>
 <div id="div_dettagli60" class="popup">
 <div id="dettagli_atto60"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli60','dettagli60',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1644,17 +2020,20 @@ DECENTRAMENTO</td>
 di Giulianello.</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli61" class="link1" href="javascript:recuperaDettagli('721affb5-af21-46ee-a676-2db05f9f4fe7',%2061);" name="dettagli61">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli61" class="link1"
+href=
+"javascript:recuperaDettagli('721affb5-af21-46ee-a676-2db05f9f4fe7',%2061);"
+name="dettagli61">Visualizza atto</a>
 <div id="div_dettagli61" class="popup">
 <div id="dettagli_atto61"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli61','dettagli61',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1669,17 +2048,20 @@ di Giulianello.</td>
 Massimo Topcu Hicran</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli62" class="link0" href="javascript:recuperaDettagli('da306e9b-ea4f-4982-ade9-e29687de09ec',%2062);" name="dettagli62">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli62" class="link0"
+href=
+"javascript:recuperaDettagli('da306e9b-ea4f-4982-ade9-e29687de09ec',%2062);"
+name="dettagli62">Visualizza atto</a>
 <div id="div_dettagli62" class="popup">
 <div id="dettagli_atto62"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli62','dettagli62',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1696,17 +2078,20 @@ Comune di Cori LT al Consorzio Nazionale Servizi Soc Coop Periodo 1
 GENNAIO 2020 30 GIUGNO 2020 CIG 4581912963</td>
 <td style="text-align:center;">31/12/2019</td>
 <td style="text-align:center;">15/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli63" class="link1" href="javascript:recuperaDettagli('aff49298-25b5-4bc8-bfdb-6a9117dadf20',%2063);" name="dettagli63">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli63" class="link1"
+href=
+"javascript:recuperaDettagli('aff49298-25b5-4bc8-bfdb-6a9117dadf20',%2063);"
+name="dettagli63">Visualizza atto</a>
 <div id="div_dettagli63" class="popup">
 <div id="dettagli_atto63"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli63','dettagli63',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1719,24 +2104,27 @@ GENNAIO 2020 30 GIUGNO 2020 CIG 4581912963</td>
 <td style="text-align:center;">AREA STAFF E AFFARI GENERALI</td>
 <td style="width:100%">Collocamento a riposo d'ufficio dipendente
 De Carolis Maurizio - Cat. Giuridica C - posizione economica C6 -
-decorrenza 1&#176; Febbraio 2020 - ai sensi e per gli effetti dell'art.
+decorrenza 1° Febbraio 2020 - ai sensi e per gli effetti dell'art.
 2, comma 5 del d.l. n. 101 del 31/08/2013, per il raggiungimento
 dei limiti ordinamentali di permanenza in servizio e per aver
-maturato la massima anzianit&#224; contributiva per il conseguimento del
+maturato la massima anzianità contributiva per il conseguimento del
 diritto a pensione anticipata</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli64" class="link0" href="javascript:recuperaDettagli('7d0a6d04-ffc8-4b13-8618-ae16c4812c9c',%2064);" name="dettagli64">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli64" class="link0"
+href=
+"javascript:recuperaDettagli('7d0a6d04-ffc8-4b13-8618-ae16c4812c9c',%2064);"
+name="dettagli64">Visualizza atto</a>
 <div id="div_dettagli64" class="popup">
 <div id="dettagli_atto64"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli64','dettagli64',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1753,17 +2141,20 @@ fornitura blocchetti di verbali per sanzioni al Codice della Strada
 - CIG: Z1F2AFA6C6</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli65" class="link1" href="javascript:recuperaDettagli('44017139-0f50-408c-9d2b-52c4cf8368ed',%2065);" name="dettagli65">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli65" class="link1"
+href=
+"javascript:recuperaDettagli('44017139-0f50-408c-9d2b-52c4cf8368ed',%2065);"
+name="dettagli65">Visualizza atto</a>
 <div id="div_dettagli65" class="popup">
 <div id="dettagli_atto65"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli65','dettagli65',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1779,17 +2170,20 @@ fornitura blocchetti di verbali per sanzioni al Codice della Strada
 Z9E2AF75AA</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli66" class="link0" href="javascript:recuperaDettagli('5c36184e-7115-4f8d-90d5-76d251413761',%2066);" name="dettagli66">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli66" class="link0"
+href=
+"javascript:recuperaDettagli('5c36184e-7115-4f8d-90d5-76d251413761',%2066);"
+name="dettagli66">Visualizza atto</a>
 <div id="div_dettagli66" class="popup">
 <div id="dettagli_atto66"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli66','dettagli66',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1806,17 +2200,20 @@ CITTA " IN VIA SAN NICOLA - IMPEGNO DI SPESA ED AFFIDAMENTO
 INCARICO - CIG Z912B2C244</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli67" class="link1" href="javascript:recuperaDettagli('8db28719-61c1-4ba4-8731-ffac50a5c465',%2067);" name="dettagli67">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli67" class="link1"
+href=
+"javascript:recuperaDettagli('8db28719-61c1-4ba4-8731-ffac50a5c465',%2067);"
+name="dettagli67">Visualizza atto</a>
 <div id="div_dettagli67" class="popup">
 <div id="dettagli_atto67"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli67','dettagli67',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1827,21 +2224,24 @@ INCARICO - CIG Z912B2C244</td>
 <td style="text-align:center;">2019</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">AREA STAFF E AFFARI GENERALI</td>
-<td style="width:100%">Accertamento in Entrata di &#8364; 4928,80 da
+<td style="width:100%">Accertamento in Entrata di € 4928,80 da
 spese legali da sent Cassazione 21296 del dipendente Matr 68</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli68" class="link0" href="javascript:recuperaDettagli('7a9e09a5-6402-4e6a-8bc3-e1f035a3774e',%2068);" name="dettagli68">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli68" class="link0"
+href=
+"javascript:recuperaDettagli('7a9e09a5-6402-4e6a-8bc3-e1f035a3774e',%2068);"
+name="dettagli68">Visualizza atto</a>
 <div id="div_dettagli68" class="popup">
 <div id="dettagli_atto68"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli68','dettagli68',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1852,21 +2252,24 @@ spese legali da sent Cassazione 21296 del dipendente Matr 68</td>
 <td style="text-align:center;">2019</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">AREA TECNICA</td>
-<td style="width:100%">Lavori di somma urgenza calamit&#224; dicembre
+<td style="width:100%">Lavori di somma urgenza calamità dicembre
 2019 impegno di spesa CIG: Z502B437F4</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli69" class="link1" href="javascript:recuperaDettagli('8f9777d6-1ec3-49a1-9b3f-0f72303be5d7',%2069);" name="dettagli69">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli69" class="link1"
+href=
+"javascript:recuperaDettagli('8f9777d6-1ec3-49a1-9b3f-0f72303be5d7',%2069);"
+name="dettagli69">Visualizza atto</a>
 <div id="div_dettagli69" class="popup">
 <div id="dettagli_atto69"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli69','dettagli69',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1883,17 +2286,20 @@ richiedenti asilo e rifugiati comune di cori. II accertamento anno
 2019</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli70" class="link0" href="javascript:recuperaDettagli('95874f7e-09df-4755-88de-2838406fa55a',%2070);" name="dettagli70">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli70" class="link0"
+href=
+"javascript:recuperaDettagli('95874f7e-09df-4755-88de-2838406fa55a',%2070);"
+name="dettagli70">Visualizza atto</a>
 <div id="div_dettagli70" class="popup">
 <div id="dettagli_atto70"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli70','dettagli70',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1910,17 +2316,20 @@ residenti e frequentanti la scuola primaria in altri comuni - a.s.
 2019-2020. Impegno di spesa 3</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli71" class="link1" href="javascript:recuperaDettagli('3a446c5b-0865-4d63-80bd-6a9ac4fde7a6',%2071);" name="dettagli71">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli71" class="link1"
+href=
+"javascript:recuperaDettagli('3a446c5b-0865-4d63-80bd-6a9ac4fde7a6',%2071);"
+name="dettagli71">Visualizza atto</a>
 <div id="div_dettagli71" class="popup">
 <div id="dettagli_atto71"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli71','dettagli71',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1935,17 +2344,20 @@ residenti e frequentanti la scuola primaria in altri comuni - a.s.
 dell'Ing. Augusto Ruggia,</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli72" class="link0" href="javascript:recuperaDettagli('9901b627-ed38-4058-9c20-b14838a8038a',%2072);" name="dettagli72">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli72" class="link0"
+href=
+"javascript:recuperaDettagli('9901b627-ed38-4058-9c20-b14838a8038a',%2072);"
+name="dettagli72">Visualizza atto</a>
 <div id="div_dettagli72" class="popup">
 <div id="dettagli_atto72"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli72','dettagli72',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -1958,21 +2370,24 @@ dell'Ing. Augusto Ruggia,</td>
 <td style="text-align:center;">AREA SERVIZI AL CITTADINO E
 DECENTRAMENTO</td>
 <td style="width:100%">Liquidazione in favore Associazione Arcadia
-della somma di &#8364; 1.100,00 quale introiti utilizzo spazi museo per
+della somma di € 1.100,00 quale introiti utilizzo spazi museo per
 matrimoni civili finalizzata a piccoli acquisti per il museo.</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli73" class="link1" href="javascript:recuperaDettagli('e4675567-2308-44d7-895d-4304a0c87e76',%2073);" name="dettagli73">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli73" class="link1"
+href=
+"javascript:recuperaDettagli('e4675567-2308-44d7-895d-4304a0c87e76',%2073);"
+name="dettagli73">Visualizza atto</a>
 <div id="div_dettagli73" class="popup">
 <div id="dettagli_atto73"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli73','dettagli73',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -1985,21 +2400,24 @@ matrimoni civili finalizzata a piccoli acquisti per il museo.</td>
 <td style="text-align:center;">AREA SERVIZI AL CITTADINO E
 DECENTRAMENTO</td>
 <td style="width:100%">Liquidazione fattura n.3/664 del 30.11.2019
-di &#8364; 21.994,23 relativa al servizio di mensa scolastica nel Mese di
+di € 21.994,23 relativa al servizio di mensa scolastica nel Mese di
 novembre 2019 Ditta RI.CA.s.r.l. CIG 7654910790</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli74" class="link0" href="javascript:recuperaDettagli('92120c8c-97e5-405f-8c31-0b2bfad9f036',%2074);" name="dettagli74">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli74" class="link0"
+href=
+"javascript:recuperaDettagli('92120c8c-97e5-405f-8c31-0b2bfad9f036',%2074);"
+name="dettagli74">Visualizza atto</a>
 <div id="div_dettagli74" class="popup">
 <div id="dettagli_atto74"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli74','dettagli74',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -2016,17 +2434,20 @@ somma urgenza su FIAT PANDA targata DY795XV in dotazione del
 Comando di Polizia Locale - CIG: Z7F2AF7527</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli75" class="link1" href="javascript:recuperaDettagli('5c360d72-4ddb-4e89-ac73-3a3e1bc0d0e7',%2075);" name="dettagli75">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli75" class="link1"
+href=
+"javascript:recuperaDettagli('5c360d72-4ddb-4e89-ac73-3a3e1bc0d0e7',%2075);"
+name="dettagli75">Visualizza atto</a>
 <div id="div_dettagli75" class="popup">
 <div id="dettagli_atto75"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli75','dettagli75',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -2042,17 +2463,20 @@ DECENTRAMENTO</td>
 onlus" inserimento minore</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli76" class="link0" href="javascript:recuperaDettagli('5fb699fb-d7e6-4ec9-88b4-a3ee9eada2a2',%2076);" name="dettagli76">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli76" class="link0"
+href=
+"javascript:recuperaDettagli('5fb699fb-d7e6-4ec9-88b4-a3ee9eada2a2',%2076);"
+name="dettagli76">Visualizza atto</a>
 <div id="div_dettagli76" class="popup">
 <div id="dettagli_atto76"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli76','dettagli76',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -2070,17 +2494,20 @@ rette sostenute dalle famiglie per la frequenza degli Asili nido
 .</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli77" class="link1" href="javascript:recuperaDettagli('da75ad12-11df-454d-b546-dd8dd1d8ae20',%2077);" name="dettagli77">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli77" class="link1"
+href=
+"javascript:recuperaDettagli('da75ad12-11df-454d-b546-dd8dd1d8ae20',%2077);"
+name="dettagli77">Visualizza atto</a>
 <div id="div_dettagli77" class="popup">
 <div id="dettagli_atto77"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli77','dettagli77',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -2096,17 +2523,20 @@ DECENTRAMENTO</td>
 08.11.19 -GIOMI RSA- ottobre 2019</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli78" class="link0" href="javascript:recuperaDettagli('945a855a-5f18-499b-bc37-721569191647',%2078);" name="dettagli78">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli78" class="link0"
+href=
+"javascript:recuperaDettagli('945a855a-5f18-499b-bc37-721569191647',%2078);"
+name="dettagli78">Visualizza atto</a>
 <div id="div_dettagli78" class="popup">
 <div id="dettagli_atto78"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli78','dettagli78',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -2119,21 +2549,24 @@ DECENTRAMENTO</td>
 <td style="text-align:center;">AREA SERVIZI AL CITTADINO E
 DECENTRAMENTO</td>
 <td style="width:100%">Liquidazione fattura n. 1472A2 del 30.11.19
-di &#8364; 2174,04 in favore Croce Rossa Italiana Comitato Area
+di € 2174,04 in favore Croce Rossa Italiana Comitato Area
 metropolitana</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli79" class="link1" href="javascript:recuperaDettagli('ac7a62c0-4933-4ff2-8563-06192c0f32ae',%2079);" name="dettagli79">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli79" class="link1"
+href=
+"javascript:recuperaDettagli('ac7a62c0-4933-4ff2-8563-06192c0f32ae',%2079);"
+name="dettagli79">Visualizza atto</a>
 <div id="div_dettagli79" class="popup">
 <div id="dettagli_atto79"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli79','dettagli79',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td0">
@@ -2152,17 +2585,20 @@ UFFICI DEMOGRAFICI DI CORI E GIULIANELLO - 4^ TRIMESTRE 2019 - CIG
 ZF227564DE</td>
 <td style="text-align:center;">27/12/2019</td>
 <td style="text-align:center;">11/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli80" class="link0" href="javascript:recuperaDettagli('92cb898c-4482-4c28-92ab-b58173ef5988',%2080);" name="dettagli80">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli80" class="link0"
+href=
+"javascript:recuperaDettagli('92cb898c-4482-4c28-92ab-b58173ef5988',%2080);"
+name="dettagli80">Visualizza atto</a>
 <div id="div_dettagli80" class="popup">
 <div id="dettagli_atto80"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli80','dettagli80',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
 <tr class="td1">
@@ -2178,18 +2614,57 @@ DECENTRAMENTO</td>
 20/12/2019</td>
 <td style="text-align:center;">20/12/2019</td>
 <td style="text-align:center;">19/01/2020</td>
-<td style="text-align:center;">Comune di Cori&#160;</td>
+<td style="text-align:center;">Comune di Cori&nbsp;</td>
 <td style="text-align:center;">PUBBLICATO</td>
-<td style="text-align:center;"><a id="dettagli81" class="link1" href="javascript:recuperaDettagli('56ec4d53-e220-4023-bad5-39c780ec3d5f',%2081);" name="dettagli81">Visualizza atto</a>
+<td style="text-align:center;"><a id="dettagli81" class="link1"
+href=
+"javascript:recuperaDettagli('56ec4d53-e220-4023-bad5-39c780ec3d5f',%2081);"
+name="dettagli81">Visualizza atto</a>
 <div id="div_dettagli81" class="popup">
 <div id="dettagli_atto81"></div>
 <br />
 <a class="popup_closebox" href="#">Chiudi</a></div>
 <script type="text/javascript">
-//&lt;![CDATA[
+//<![CDATA[
                         new Popup('div_dettagli81','dettagli81',{modal:true,duration:1});
-//]]&gt;
+//]]>
 </script></td>
 </tr>
-</table>	</body>
+</table>
+</form>
+<p class="warning">L'albo pretorio è il luogo in cui vengono
+esposte le copie di tutti gli atti pubblici dell'Ente affinchè i
+cittadini possano prenderne visione.<br />
+Nella sua versione on line è possibile consultare gli oggetti, le
+date di pubblicazione ed il contenuto dei tipi di atto inseriti
+(vedere pagina di benvenuto).<br />
+L'albo pretorio garantisce che la pubblicazione degli atti e
+documenti abbia luogo per il periodo previsto dalla vigente
+normativa in materia e che le informazioni riportate siano conformi
+e corrispondenti a quelle contenute negli atti amministrativi
+originali dell'Ente.</p>
+<p class="warning">L'amministrazione pone in evidenza le sanzioni
+civili e penali in cui si incorre mettendo in atto azioni che
+possono compromettere l'autenticit�, la veridicità e l'integrità
+dell'elenco e dei documenti pubblicati, oppure limitarne o
+impedirne l'accesso, anche temporaneamente.</p>
+<div style="text-align:center">
+<div class="footer">
+<p>� Copyright Data Management S.p.A - All rights reserved</p>
+<p><a href="http://validator.w3.org/check?uri=referer" title=
+"Valid XHTML 1.0 Strict"><img src=
+"http://www.w3.org/Icons/valid-xhtml10-blue" alt=
+"Valid XHTML 1.0 Strict" height="31" width="88" /></a> <a href=
+"http://jigsaw.w3.org/css-validator/check/referer" title=
+"CSS Valido!"><img style="border: 0; width: 88px; height: 31px"
+src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt=
+"CSS Valido!" /></a> <a href=
+"http://www.w3.org/WAI/WCAG2A-Conformance" title=
+"Spiegazione del livello A conforme"><img class="conform" src=
+"http://www.w3.org/WAI/wcag2A-blue" alt=
+"Icona di livello A conforme, W3C-WAI Web Content Accessibility Guidelines 2.0"
+height="32" width="88" /></a></p>
+</div>
+</div>
+</body>
 </html>
