@@ -5,6 +5,6 @@
     "urlToClean": "https://albopretorio.datamanagementitalia.it/AlboPretorioWeb/?ente=ComuneDiCori&tipoSubmit=ricerca",
     "tidy": 1,
     "scrape": 1,
-    "xpath": "//table[@class='resulttable']"
+    "xpath": "//table[@class='resulttable']/tr[td[contains(.,'PUBBLICATO')]]"
   }
 ]
