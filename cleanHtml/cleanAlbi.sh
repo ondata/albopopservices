@@ -2,7 +2,7 @@
 
 folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-#set -x
+set -x
 
 mkdir -p "$folder"/webpages
 
